@@ -126,13 +126,19 @@ nav ul li:nth-child(5){
 nav ul li:nth-child(5) a:hover{
     color: #F9E100;
 }
+nav ul li:nth-child(6) a, span{
+    color: #F9E100;
+}
 .btn-content{
     position: relative;
-    width: 40px;
-    height: 40px;
+    width:10px;
+    height: 10px;
     border-radius: 100%;
     background-color: #F9E100;
     display: block;
+    float: left;
+    text-align: center;
+    margin-right: 8px;
 }
 .btn-top{
     position: absolute;
@@ -142,7 +148,26 @@ nav ul li:nth-child(5) a:hover{
     height: 100%;
     border-radius: 100%;
     background-color: #F9E100;
-    z-index: -1;
+    
     display: block;
     pointer-events: none;
+    animation: btnani 2s linear infinite;
+}
+@keyframes btnani{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+nav ul li:nth-child(7) a:hover{
+    color: #F9E100;
+}
+nav ul li:nth-child(8) a:hover{
+    color: #F9E100;
+}
+nav ul li:nth-child(9) a:hover{
+    color: #F9E100;
 }
