@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.container{
+    position: relative;
+
+}
+.container h2{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+}
+.container h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.container h2:nth-child(2){
+    color:#03a9f4;
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate{
+    0%, 100%{
+        clip-path: polygon(0% 50%, 12% 45%, 25% 42%, 35% 48%, 50% 54%, 62% 63%, 79% 69%, 93% 65%, 100% 59%, 100% 100%, 1% 100%);    
+    }  
+    
+    50%{        
+        clip-path: polygon(0% 63%, 17% 68%, 37% 71%, 60% 66%, 74% 56%, 89% 45%, 100% 41%, 100% 100%, 1% 100%);}
