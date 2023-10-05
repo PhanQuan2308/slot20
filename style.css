@@ -98,7 +98,7 @@ nav ul li:nth-child(3) input{
 }
 nav ul li:nth-child(3) i{
     position: absolute;
-    font-size: 28px;
+    font-size: 22px;
     right: 3px;
     color: #1F0503;
 }
@@ -171,7 +171,30 @@ nav ul li:nth-child(8) a:hover{
 nav ul li:nth-child(9) a:hover{
     color: #F9E100;
 }
+/* --------Menu- bar---------- */
 .menu-bar{
     background-color: #F9E100;
-    height: 30px;
+    height: 40px;
+   
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.menu-bar ul li a{
+    color: #1F0503;
+    font-size: 16px;
+}
+.menu-bar ul li a i{
+    margin-right: 6px;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+.menu-bar ul li{
+    padding: 10px 0;
+    transition: all 0.5s ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
 }
