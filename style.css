@@ -174,7 +174,7 @@ nav ul li:nth-child(9) a:hover{
 /* --------Menu- bar---------- */
 .menu-bar{
     background-color: #F9E100;
-    height: 40px;
+    height: 50px;
    
 }
 .menu-bar ul{
@@ -192,9 +192,38 @@ nav ul li:nth-child(9) a:hover{
     vertical-align: bottom;
 }
 .menu-bar ul li{
-    padding: 10px 0;
+    padding: 15px 0;
     transition: all 0.5s ease;
+    margin-right: 10px;
 }
 .menu-bar ul li:hover{
     background-color: white;
+}
+.menu-bar ul li:nth-child(9){
+    position: relative;
+}
+.menu-bar ul li:nth-child(9)::before{
+    position: absolute;
+    content: "Giảm 5%";
+    font-size: 11px;
+    
+    display: block;
+    height: 15px;
+    width: 43px;
+    background-color: #f51212;
+    border-radius: 5px;
+    left: 60px;
+    top: 1px;
+    color: #FBFBFB;
+}
+.menu-bar ul li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    background-color: #f51212;
+    z-index: 0;
+    right: 13px;
+    top: 10px;
+    transform: rotate(45deg);
 }
