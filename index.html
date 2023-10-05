@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../font/fontawesome-free-6.4.2-web/css/all.min.css">
     <title>The gioi di dong</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
 </head>
 <body>
     <header>
@@ -23,29 +23,8 @@
        <div class="container">
         <ul>
             <li><a href=""><img src="img/Thegioididong-Logo-PNG-3.png" alt="" width="200px"></a></li>
-            <li><a href="">Bắc Ninh <i class='bx bx-down-arrow'></i></a> 
-                <div class="adress-form">
-                    <div class="adress-form-content">
-                        <h5>Chọn địa chỉ nhận hàng</h5>
-                        <form action="">
-                            <p>Chọn địa chỉ nhận hàng để biết chính xác thời gian giao</p>
-                            <select name="" id="">
-                                <option value="#">--Chọn địa điểm</option>
-                                <option value="#">Bắc Ninh</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="#">--Chọn Quận\Huyện</option>
-                                <option value="#">Bắc Ninh</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="#">--Chọn Phường\Xã</option>
-                                <option value="#">Bắc Ninh</option>
-                            </select>
-                            <input type="text" placeholder="Số nhà, Tên đường">
-                            <button type="">Xác nhận</button>
-                        </form>
-                    </div>
-                </div>
+            <li id="adress-form"><a href="#">Bắc Ninh <i class='bx bx-down-arrow'></i></a> 
+                
             </li>
             <li><input type="text" placeholder="Bạn tìm gì..."><i class='bx bx-search-alt-2' ></i></li>
             <li><a href=""></a><button> <i class='bx bx-cart-download'></i>Giỏ hàng</button></li>
@@ -54,6 +33,28 @@
             <li><a href="">24h Công Nghệ</a></li>
             <li><a href="">Hỏi Đáp</a></li>
             <li><a href="">Game App</a></li>
+            <div class="adress-form">
+                <div class="adress-form-content">
+                    <h5>Chọn địa chỉ nhận hàng <hr><span id="adress-close"> X ĐÓNG</span></h5>
+                    <form action="">
+                        <p>Chọn địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                        <select name="" id="">
+                            <option value="#">--Chọn Tỉnh\Thành Phố</option>
+                            <option value="#">Bắc Ninh</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn Quận\Huyện</option>
+                            <option value="#">Yên Phong</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn Phường\Xã</option>
+                            <option value="#">Thụy Hòa</option>
+                        </select>
+                        <input type="text" placeholder="Số nhà, Tên đường">
+                        <button type="">Xác nhận</button>
+                    </form>
+                </div>
+            </div>
         </ul>
        </div>
     </nav>
@@ -76,6 +77,8 @@
         </div>
 
     </section>
-    
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
