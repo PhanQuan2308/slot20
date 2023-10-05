@@ -155,7 +155,7 @@ nav ul li:nth-child(6) a, span{
 }
 @keyframes btnani{
     from{
-        opacity: 0.4;
+        opacity: 0.8;
     }
     to{
         transform: scale(3);
@@ -222,7 +222,7 @@ nav ul li:nth-child(9) a:hover{
     height: 7px;
     width: 7px;
     background-color: #f51212;
-    z-index: 0;
+    
     right: 13px;
     top: 10px;
     transform: rotate(45deg);
