@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header{
     width: 100%;
     height: 50px;
@@ -193,18 +194,18 @@ nav ul li:nth-child(9) a:hover{
     font-size: 20px;
     vertical-align: bottom;
 }
-.menu-bar ul li{
+.menu-bar-container > ul > li{
     padding: 15px 0;
     transition: all 0.5s ease;
     margin-right: 10px;
 }
-.menu-bar ul li:hover{
+.menu-bar > ul > li:hover{
     background-color: white;
 }
 .menu-bar ul li:nth-child(9){
     position: relative;
 }
-.menu-bar ul li:nth-child(9)::before{
+.menu-bar-container > ul > li:nth-child(9)::before{
     position: absolute;
     content: "Giảm 5%";
     font-size: 11px;
@@ -218,7 +219,7 @@ nav ul li:nth-child(9) a:hover{
     top: 1px;
     color: #FBFBFB;
 }
-.menu-bar ul li:nth-child(9)::after{
+.menu-bar-container > ul > li:nth-child(9)::after{
     position: absolute;
     content: "";
     height: 7px;
@@ -301,4 +302,65 @@ nav ul li:nth-child(9) a:hover{
     color:#FBFBFB;
     font-size: 17px;
     cursor: pointer;
+}
+
+
+
+
+
+
+/* ----------submenu----------- */
+.menu-bar-container ul li{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    top: 100%;
+    left: 0;
+    padding: 12px;
+    display: none;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.submenu ul li{
+    padding: 10px 0;
+}
+.submenu ul li a:hover {
+    cursor: pointer;
+    color: #0A59A2;
+}
+.menu-bar-container ul li:hover .submenu  {
+    display: block;
+}
+.PC{
+    display: none;
+}
+
+.PC ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+    display: flex;
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+ 
+}
+.PC ul li{
+    padding: 6px;
+}
+.PC ul li a:hover{
+    cursor: pointer;
+    color: #319ce9;
+}
+.menu-bar-container ul li:hover .PC{
+    display: block;
 }
