@@ -28,3 +28,11 @@ leftbtn.addEventListener("click",function(){
     }
     document.querySelector(".slider-content-left-top").style.right = index *100+"%"
 })
+// slider------------------------------------------
+const imgNumberLi = document.querySelectorAll('.slider-content-left-bottom li')
+imgNumberLi.forEach(function(image,index){
+    image.addEventListener("click",function(){
+
+        document.querySelector(".slider-content-left-top").style.right = index *100+"%"
+    })
+})
